@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Ferry";
+    src: url(../assets/fonts/Ferry/ferry.ttf);
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter/inter.ttf);
+  }
+  
+  $font-primary: 'Ferry', Arial, Helvetica, sans-serif;
+  $font-secondary: 'Inter', Arial, Helvetica, sans-serif;

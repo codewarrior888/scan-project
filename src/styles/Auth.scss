@@ -1,0 +1,56 @@
+@import 'colors';
+
+.authorization {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  justify-items: left;
+  padding: var(--padding);
+
+  &__title {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  &__image {
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .authorization {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__title {
+      width: 90%;
+    }
+
+    &__image {
+      max-width: 80%;
+      margin: 150px 0 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .authorization {
+    padding: var(--padding);
+
+    &__title {
+      width: 100%;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .authorization {
+    padding: var(--padding);
+  }
+}

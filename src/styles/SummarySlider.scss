@@ -1,0 +1,156 @@
+@import 'colors';
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  background-color: $main-color-green;
+  padding: 17px 27px;
+  border-radius: 10px 0px 0px 10px;
+  height: 160px;
+  font-size: 20px;
+  font-weight: 500;
+  color: $main-color-white;
+}
+
+.summary-title {
+  color: $main-color-black;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.summary-all {
+  color: $secondary-color-gray;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+.summary-slider {
+  max-width: 100%;
+  width: auto;
+  height: 160px;
+  margin: 30px 0px 30px 113px;
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid $main-color-green;
+}
+
+.slider-item {
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  border-right: 2px $secondary-color-light-gray solid;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev img,
+.slick-next img {
+  width: 30px;
+  height: auto;
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -145px !important;
+}
+
+.slick-next {
+  right: -25px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-list {
+  height: 155px;
+}
+
+.slick-track {
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-slide {
+  box-shadow: none;
+  margin: 0;
+  padding: 15px 0;
+  height: 100% !important;
+}
+
+.slick-slide div {
+  height: 100%;
+}
+
+@media all and (max-width: 940px) {
+  .slider-wrapper {
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+}
+
+@media all and (max-width: 550px) {
+  .slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: unset;
+  }
+
+  .summary-title {
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  .summary-all {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .slider-titles {
+    width: auto;
+    position: unset;
+    flex-direction: row;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .summary-slider {
+    height: 65px;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+    .slick-prev {
+      left: -35px !important;
+    }
+    .slick-next {
+      right: -25px !important;
+    }
+    .slider-item {
+      flex-direction: row;
+      padding: 17px 27px;
+      border: none;
+    }
+    .slick-list {
+      height: 65px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import 'colors';
+
+.documents__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.documents__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-anchor: none;
+}
+
+.documents__title {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 30px 0;
+}
+
+.documents-button__loading {
+  width: 300px;
+  height: 60px;
+  // border-radius: 5px;
+  background: none;
+  border: none;
+  color: $main-color-black;
+  font-size: 14px;
+  font-weight: 500;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.documents-button__active {
+  background: $secondary-color-purple;
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  color: $main-color-white;
+  font-size: 22px;
+  font-weight: 500;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 50px;
+
+  &:hover {
+    transform: scale(1.03);
+    background-color: $dark-purple-button-hover;
+  }
+}
+
+.documents-disabled {
+  display: none;
+}
+
+@media all and (max-width: 400px) {
+  .documents-button__active {
+    width: 90%;
+  }
+}

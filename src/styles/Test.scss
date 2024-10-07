@@ -1,0 +1,100 @@
+@import 'colors';
+
+.test {
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 45px;
+        font-weight: 600;
+        color: $secondary-color-light-green;
+        margin: 30px;
+        text-shadow: 
+        -1px -1px 1px $main-color-green,
+         1px -1px 1px $main-color-green,
+        -1px  1px 1px $main-color-green,
+         1px  1px 1px $main-color-green;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: $secondary-color-light-green;
+        margin: 0 0 50px 0;
+        text-shadow: 
+        -1px -1px 1px $main-color-green,
+        1px -1px 1px $main-color-green,
+        -1px  1px 1px $main-color-green,
+        1px  1px 1px $main-color-green;
+    }
+
+    .button {
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        color: $main-color-black;
+        font-size: 14px;
+        font-weight: 500;
+        border: $main-color-green solid 1px;
+        background-color: $secondary-color-light-green;
+        margin: 10px 0;
+    }
+
+    .reset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 50px;
+
+        &__reset-button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: $secondary-color-gray solid 0.5px;
+        }
+    }
+
+    .results-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $main-color-black;
+    text-decoration: underline solid 0.5px;
+    }
+
+    .section {
+        width: 90%;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 5px;
+        text-align: left;
+        white-space: pre-wrap;
+
+        pre {
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+    }
+
+    .histogram-section {
+        background-color: $secondary-color-light-gray;
+    }
+    .publications-section {
+        background-color: $secondary-color-light-green;
+    }
+    .publication-details-section {
+        background-color: $secondary-color-light-blue;
+    }
+}
+  

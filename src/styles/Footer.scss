@@ -1,0 +1,38 @@
+@import 'fonts';
+@import 'colors';
+
+.footer {
+  background-color: $main-color-green;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+  text-align: right;
+}
+
+.footer-address,
+.footer-copyright {
+  color: $main-color-white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.footer-link {
+  color: $main-color-white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 550px) {
+  .footer {
+    padding: 10px;
+  }
+}

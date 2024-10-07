@@ -1,0 +1,51 @@
+@import 'colors';
+
+.not-signed {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: $secondary-color-gray;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.sign-up:hover {
+  border-bottom: $secondary-color-light-green 3px solid;
+}
+
+.line {
+  width: 2px;
+  height: 26px;
+  background-color: var(--main-color-green);
+  margin: 0 20px;
+}
+
+.sign-in {
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  padding: 4px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $main-color-black;
+  background-color: $secondary-color-light-green;
+  transition: var(--transition);
+}
+
+.sign-in:hover {
+  background-color: darken($secondary-color-light-green, 20%);
+}
+
+.sign-in:active {
+  transform: scale(1);
+}
+
+@media (max-width: 850px) {
+  .not-signed {
+    display: none;
+  }
+}

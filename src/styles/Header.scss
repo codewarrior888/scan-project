@@ -1,0 +1,44 @@
+@import 'colors';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+
+  .header-logo {
+    max-width: 150px;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+
+    &__link {
+      font-size: 14px;
+      text-decoration: none;
+      color: $main-color-black;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s ease;
+
+      &:hover {
+        border-color: $secondary-color-light-green;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .header-nav {
+      display: none;
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 10px 30px;
+
+    .header-logo {
+      width: 100px;
+    }
+  }
+}
