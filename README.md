@@ -18,10 +18,10 @@ npm i
 ```bash
 npm start
 ```
-### `npm start`
-
 Запуск приложения на dev сервере.\
 Открыть [http://localhost:3000](http://localhost:3000) для отображения в браузере.
 
 ### 3. Сборка проекта
-### `npm run build`
+```bash
+npm run build
+```
